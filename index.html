@@ -34,7 +34,28 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <style>
+       /* Scroll to Top Button Styles */
+       #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px; /* Distance from the bottom */
+            left: 20px;
+            display: none; /* Hidden by default */
+            background-color: #990066; /* Button color */ 
+            color: white; /* Text color */
+            border:none; /* No border */
+            border-radius: 50px; /* Rounded corners */
+            padding: 10px 15px; /* Padding */
+            cursor: pointer; /* Pointer cursor on hover */
+            z-index: 1000; /* Ensure it appears above other elements */
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+        }
 
+        #scrollToTopBtn:hover {
+            background-color: rgb(203, 197, 197); /* Darker shade on hover */
+            color: #990066;
+        }
+    </style>
   </head>
 
 <body>
@@ -84,6 +105,24 @@
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+  <button id="scrollToTopBtn" style="display: none;">Top</button>
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when the user scrolls down 20px from the top of the document
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll to the top of the document when the button is clicked
+    scrollToTopBtn.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
 
   <div class="container">
     <div class="row">
