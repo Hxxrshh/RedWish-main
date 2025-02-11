@@ -22,7 +22,7 @@ body {
 .donation-form h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #990066; /* Header color */
+    color: #ec6090; /* Header color */
 }
 
 .form-group {
@@ -35,7 +35,7 @@ body {
 }
 
 .form-control:focus {
-    border-color: #990066; /* Change border color on focus */
+    border-color: #ec6090; /* Change border color on focus */
     box-shadow: 0 0 5px rgba(153, 0, 102, 0.5); /* Shadow on focus */
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .main-button .btn {
-    background-color: #990066; /* Button color */
+    background-color: #ec6090; /* Button color */
     color: white; /* Text color */
     padding: 10px 20px;
     border-radius: 5px;
@@ -58,7 +58,7 @@ body {
 }
 
 footer {
-    background-color: #990066; /* Footer background color */
+    background-color: #ec6090; /* Footer background color */
     color: white; /* Footer text color */
     padding: 10px 0;
     text-align: center;
