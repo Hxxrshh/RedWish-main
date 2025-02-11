@@ -1,0 +1,77 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.donation-form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.donation-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #990066; /* Header color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for input fields */
+    border: 1px solid #ccc; /* Light border */
+}
+
+.form-control:focus {
+    border-color: #990066; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(153, 0, 102, 0.5); /* Shadow on focus */
+}
+
+.main-button {
+    text-align: center;
+}
+
+.main-button .btn {
+    background-color: #990066; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none; /* No border */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.main-button .btn:hover {
+    background-color: #99CCFF; /* Change to a lighter color on hover */
+    color: white; /* Keep text color white */
+}
+
+footer {
+    background-color: #990066; /* Footer background color */
+    color: white; /* Footer text color */
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffffff; /* Link color in footer */
+    text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
