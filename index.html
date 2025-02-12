@@ -1,345 +1,382 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <head>
+    <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>RedWish</title>
-
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        rel="stylesheet"
-        />
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        rel="stylesheet"
-        />
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
-        rel="stylesheet"
-        />
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <title>RedWish</title>
 
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <style>
-       /* Scroll to Top Button Styles */
-       #scrollToTopBtn {
-            position: fixed;
-            bottom: 20px; /* Distance from the bottom */
-            left: 20px;
-            display: none; /* Hidden by default */
-            background-color: #ec6090; /* Button color */ 
-            color: white; /* Text color */
-            border:none; /* No border */
-            border-radius: 50px; /* Rounded corners */
-            padding: 10px 15px; /* Padding */
-            cursor: pointer; /* Pointer cursor on hover */
-            z-index: 1000; /* Ensure it appears above other elements */
-            transition: opacity 0.3s ease; /* Smooth transition for opacity */
-        }
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          rel="stylesheet"
+          />
+      <link
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          rel="stylesheet"
+          />
+      <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+          rel="stylesheet"
+          />
+      <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        #scrollToTopBtn:hover 
-        {
-            background-color: rgb(203, 197, 197); /* Darker shade on hover */
-            color: #990066;
-        }
-        .main-button a 
-        {
-          transition: background-color 0.3s, color 0.3s;
-        }
 
-        .main-button a:hover 
-        {
-          background-color: #99CCFF; /* Change to your desired color */
-          color: white;
-        }
-    </style>
-  </head>
+      <!-- Additional CSS Files -->
+      <link rel="stylesheet" href="assets/css/fontawesome.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/owl.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
+      <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+      <style>
+        /* Scroll to Top Button Styles */
+        #scrollToTopBtn {
+              position: fixed;
+              bottom: 20px; /* Distance from the bottom */
+              left: 20px;
+              display: none; /* Hidden by default */
+              background-color: #ec6090; /* Button color */ 
+              color: white; /* Text color */
+              border:none; /* No border */
+              border-radius: 50px; /* Rounded corners */
+              padding: 10px 15px; /* Padding */
+              cursor: pointer; /* Pointer cursor on hover */
+              z-index: 1000; /* Ensure it appears above other elements */
+              transition: opacity 0.3s ease; /* Smooth transition for opacity */
+          }
 
-<body>
-  
-<!-- ** Chat Bot Start ** -->
-<script type="text/javascript">
-  (function(d, m){
-      var kommunicateSettings = 
-          {"appId":"3486e69821a22f043797f7e96ae6e671d","popupWidget":true,"automaticChatOpenOnNavigation":true};
-      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-      window.kommunicate = m; m._globals = kommunicateSettings;
-  })(document, window.kommunicate || {});
-/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-</script>
+          #scrollToTopBtn:hover 
+          {
+              background-color: rgb(203, 197, 197); /* Darker shade on hover */
+              color: #990066;
+          }
+          .main-button a 
+          {
+            transition: background-color 0.3s, color 0.3s;
+          }
 
-  <!-- ***** Preloader Start ***** -->
-  
-  <!-- ***** Preloader End ***** -->
+          .main-button a:hover 
+          {
+            background-color: #99CCFF; /* Change to your desired color */
+            color: white;
+          }
+      </style>
+    </head>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                      <img src="images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="sign.html">Sign-In/Sign-Up</a></li>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="profile.html">Profile <img src="images/Profile-pic.jpg" alt=""></a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  <button id="scrollToTopBtn" style="display: none;">Top</button>
-  <script>
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  <body>
+    
+  <!-- ** Chat Bot Start ** -->
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"3486e69821a22f043797f7e96ae6e671d","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+  /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+  </script>
 
-    // Show the button when the user scrolls down 20px from the top of the document
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            scrollToTopBtn.style.display = "block";
-        } else {
-            scrollToTopBtn.style.display = "none";
-        }
-    };
+    <!-- ***** Preloader Start ***** -->
+    
+    <!-- ***** Preloader End ***** -->
 
-    // Scroll to the top of the document when the button is clicked
-    scrollToTopBtn.onclick = function() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    };
-</script>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
-
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>Welcome To RedWish</h6>
-                  <h4 class="Banner"><em>Redily</em> <br> Available <br> Blood</h4>
-                  <div class="main-button">
-                    <a href="index.html">See Hospitals Near You</a>
-                  </div>
-                </div>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li><a href="sign.html">Sign-In/Sign-Up</a></li>
+                          <li><a href="index.html" class="active">Home</a></li>
+                          <li><a href="donate.html">Donate</a></li>
+                          <li><a href="profile.html">Profile <img src="images/Profile-pic.jpg" alt=""></a></li>
+                      </ul>   
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
               </div>
-            </div>
           </div>
-          <!-- ***** Banner End ***** -->
-
-          <!-- ***** Hospitals Near You ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Hospitals / Blood Banks Near You</em> Right Now</h4>
-                </div>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital copy.png" alt="">
-                      <a href="Details/krishna.html"><h4>Krishna Hospital</h4></a>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 5</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital (1) copy.png" alt="">
-                      <a href="Details/krishna.html"><h4>Iris Hospital</h4></a>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.2</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital (1).png" alt="">
-                      <a href="Details/zydus.html"><h4>Zydus Hospitals</h4></a>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.7</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital copy 3.png" alt="">
-                      <a href="Details/arun.html"><h4>Arun Hospital</h4></a>
-                     
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital-building.png" alt="">
-                      <a href="details.html"><h4>Unity Hospital</h4></a>
-                      
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.4</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital (2).png" alt="">
-                      <a href="Details/avira.html"><h4>Avira Hospital</h4></a>
-                     
-                      <ul>
-                        <li><i class="fa fa-star"></i> 3.6</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital copy 4.png" alt="">
-                      <a href="Details/anand.html"><h4>Anand Hospital</h4></a>
-                     
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.9</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="images/Hospital pics/hospital.png" alt="">
-                      <a href="details.html"><h4>Memorial Hospital</h4></a>
-                     
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.5</li>
-                        
-                      </ul>
-                    </div>
-                  </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Hospitals Near You End***** -->
-
-          <!-- ***** You Donations List Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Your Donations</em> List</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="images/Hospital pics/hospital-building.png" alt="" class="templatemo-item"></li>
-                  <li><h4>Unity Hospital</h4><span>Dr. Pathak</span></li>
-                  <li><h4>Date Donated</h4><span>07/12/2024</span></li>
-                  <li><h4>Liters Donated</h4><span>200mL (0.2 L)</span></li>
-                  <li><h4>Currently</h4><span>Transferred</span></li>
-                  <li><div class="main-border-button"><a href="Receipts/Medical-Bill-Receipt-Template_page-0001.pdf">Get Receipt</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="images/Hospital pics/hospital.png" alt="" class="templatemo-item"></li>
-                  <li><h4>Memorial Hospital</h4><span>Dr. Patel</span></li>
-                  <li><h4>Date Donated</h4><span>11/11/2024</span></li>
-                  <li><h4>Liters Donated</h4><span>100 mL (0.1 L)</span></li>
-                  <li><h4>Currently</h4><span>On Hold</span></li>
-                  <li><div class="main-border-button"><a href="Receipts/Medical-Bill-Receipt-Template-2_pages-to-jpg-0001.pdf">Get Receipt</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="images/Hospital pics/hospital copy 6.png" alt="" class="templatemo-item"></li>
-                  <li><h4>Iris hsopital</h4><span>Dr. Batra</span></li>
-                  <li><h4>Date Donated</h4><span>21/04/2024</span></li>
-                  <li><h4>Liters Donated</h4><span>89 mL (0.089 L)</span></li>
-                  <li><h4>Currently</h4><span>Received</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Downloaded</a></div></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Donations</a>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Your Donations End ***** -->
-        </div>
       </div>
-    </div>
-  </div>
-  
-  <footer>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <button id="scrollToTopBtn" style="display: none;">Top</button>
+    <script>
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show the button when the user scrolls down 20px from the top of the document
+      window.onscroll = function() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              scrollToTopBtn.style.display = "block";
+          } else {
+              scrollToTopBtn.style.display = "none";
+          }
+      };
+
+      // Scroll to the top of the document when the button is clicked
+      scrollToTopBtn.onclick = function() {
+          window.scrollTo({top: 0, behavior: 'smooth'});
+      };
+  </script>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2025 <a href="#">RedWish</a> Company. All rights reserved. 
+          <div class="page-content">
+
+            <!-- ***** Banner Start ***** -->
+            <div class="main-banner">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-text">
+                    <h6>Welcome To RedWish</h6>
+                    <h4 class="Banner"><em>Redily</em> <br> Available <br> Blood</h4>
+                    <div class="main-button">
+                      <a href="index.html">See Hospitals Near You</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Banner End ***** -->
+
+            <!-- ***** Hospitals Near You ***** -->
+            <div class="most-popular">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="heading-section">
+                    <h4><em>Hospitals / Blood Banks Near You</em> Right Now</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital copy.png" alt="">
+                        <a href="Details/krishna.html"><h4>Krishna Hospital</h4></a>
+                        <ul>
+                          <li><i class="fa fa-star"></i> 5</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital (1) copy.png" alt="">
+                        <a href="Details/krishna.html"><h4>Iris Hospital</h4></a>
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.2</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital (1).png" alt="">
+                        <a href="Details/zydus.html"><h4>Zydus Hospitals</h4></a>
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.7</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital copy 3.png" alt="">
+                        <a href="Details/arun.html"><h4>Arun Hospital</h4></a>
+                      
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.8</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital-building.png" alt="">
+                        <a href="details.html"><h4>Unity Hospital</h4></a>
+                        
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.4</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital (2).png" alt="">
+                        <a href="Details/avira.html"><h4>Avira Hospital</h4></a>
+                      
+                        <ul>
+                          <li><i class="fa fa-star"></i> 3.6</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital copy 4.png" alt="">
+                        <a href="Details/anand.html"><h4>Anand Hospital</h4></a>
+                      
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.9</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item">
+                        <img src="images/Hospital pics/hospital.png" alt="">
+                        <a href="details.html"><h4>Memorial Hospital</h4></a>
+                      
+                        <ul>
+                          <li><i class="fa fa-star"></i> 4.5</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Hospitals Near You End***** -->
+
+            <!-- ***** You Donations List Start ***** -->
+            <div class="gaming-library">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>Your Donations</em> List</h4>
+                </div>
+                <div class="item">
+                  <ul>
+                    <li><img src="images/Hospital pics/hospital-building.png" alt="" class="templatemo-item"></li>
+                    <li><h4>Unity Hospital</h4><span>Dr. Pathak</span></li>
+                    <li><h4>Date Donated</h4><span>07/12/2024</span></li>
+                    <li><h4>Liters Donated</h4><span>200mL (0.2 L)</span></li>
+                    <li><h4>Currently</h4><span>Transferred</span></li>
+                    <li><div class="main-border-button"><a href="Receipts/Medical-Bill-Receipt-Template_page-0001.pdf">Get Receipt</a></div></li>
+                  </ul>
+                </div>
+                <div class="item">
+                  <ul>
+                    <li><img src="images/Hospital pics/hospital.png" alt="" class="templatemo-item"></li>
+                    <li><h4>Memorial Hospital</h4><span>Dr. Patel</span></li>
+                    <li><h4>Date Donated</h4><span>11/11/2024</span></li>
+                    <li><h4>Liters Donated</h4><span>100 mL (0.1 L)</span></li>
+                    <li><h4>Currently</h4><span>On Hold</span></li>
+                    <li><div class="main-border-button"><a href="Receipts/Medical-Bill-Receipt-Template-2_pages-to-jpg-0001.pdf">Get Receipt</a></div></li>
+                  </ul>
+                </div>
+                <div class="item last-item">
+                  <ul>
+                    <li><img src="images/Hospital pics/hospital copy 6.png" alt="" class="templatemo-item"></li>
+                    <li><h4>Iris hsopital</h4><span>Dr. Batra</span></li>
+                    <li><h4>Date Donated</h4><span>21/04/2024</span></li>
+                    <li><h4>Liters Donated</h4><span>89 mL (0.089 L)</span></li>
+                    <li><h4>Currently</h4><span>Received</span></li>
+                    <li><div class="main-border-button border-no-active"><a href="#">Downloaded</a></div></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="profile.html">View Your Donations</a>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Your Donations End ***** -->
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright © 2025 <a href="#">RedWish</a> Company. All rights reserved. 
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyD0tKjT15ZymQ76h3vllzNenY4VN4yDgF4",
-      authDomain: "redwish-130225.firebaseapp.com",
-      projectId: "redwish-130225",
-      storageBucket: "redwish-130225.firebasestorage.app",
-      messagingSenderId: "617244627905",
-      appId: "1:617244627905:web:b729d6a62e912e3558d540",
-      measurementId: "G-JKC6YKDR1C"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-  
-</body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      // Import Firebase modules correctly
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAp7y9px-WlOotc5PvDQpdMeMuCm_JLybM",
+  authDomain: "redwish-130225.firebaseapp.com",
+  projectId: "redwish-130225",
+  storageBucket: "redwish-130225.appspot.com",
+  messagingSenderId: "627155347362",
+  appId: "1:627155347362:web:8e760646b53fef026c490e"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Sign-up function
+  document.getElementById("signup-btn").addEventListener("click", function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Sign-up successful! Welcome " + userCredential.user.email);
+      })
+      .catch((error) => {
+        alert("Error: " + error.message);
+      });
+  });
+
+  // Login function
+  document.getElementById("login-btn").addEventListener("click", function () {
+    const email = document.getElementById("login-email").value;
+    const password = document.getElementById("login-password").value;
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Login successful! Welcome back " + userCredential.user.email);
+      })
+      .catch((error) => {
+        alert("Error: " + error.message);
+      });
+  });
+
+  // Logout function
+  document.getElementById("logout-btn").addEventListener("click", function () {
+    signOut(auth)
+      .then(() => {
+        alert("You have logged out successfully.");
+      })
+      .catch((error) => {
+        alert("Error: " + error.message);
+      });
+  });
+});
+
+
 
 </html>
