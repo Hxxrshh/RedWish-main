@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "firebase": "^11.3.0",
     "localtunnel": "^2.0.2"
   }
 }
