@@ -35,36 +35,42 @@
       <link rel="stylesheet" href="assets/css/animate.css">
       <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
       <style>
-        /* Scroll to Top Button Styles */
-        #scrollToTopBtn {
-              position: fixed;
-              bottom: 20px; /* Distance from the bottom */
-              left: 20px;
-              display: none; /* Hidden by default */
-              background-color: #ec6090; /* Button color */ 
-              color: white; /* Text color */
-              border:none; /* No border */
-              border-radius: 50px; /* Rounded corners */
-              padding: 10px 15px; /* Padding */
-              cursor: pointer; /* Pointer cursor on hover */
-              z-index: 1000; /* Ensure it appears above other elements */
-              transition: opacity 0.3s ease; /* Smooth transition for opacity */
-          }
+        body {
+            background: url('images/background.jpg') no-repeat center center/cover;
+            font-family: 'Poppins', sans-serif;
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .header-area {
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        
+        .main-button a {
+            background: #ec6090;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white;
+            transition: transform 0.3s ease, background 0.3s;
+        }
 
-          #scrollToTopBtn:hover 
-          {
-              background-color: rgb(203, 197, 197); /* Darker shade on hover */
-              color: #990066;
-          }
-          .main-button a 
-          {
-            transition: background-color 0.3s, color 0.3s;
-          }
+        .main-button a:hover {
+            background: #99CCFF;
+            transform: scale(1.1);
+            color: white;
+        }
+  
+        .item img {
+            transition: transform 0.3s ease;
+        }
 
-        .main-button a:hover 
-        {
-          background-color: #99CCFF; /* Change to your desired color */
-          color: white;
+        .item:hover img {
+            transform: scale(1.05);
         }
     </style>
   </head>
