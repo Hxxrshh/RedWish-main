@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>RedWish</title>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        rel="stylesheet"
+        />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+        rel="stylesheet"
+        />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <style>
+       /* Scroll to Top Button Styles */
+       #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px; /* Distance from the bottom */
+            left: 20px;
+            display: none; /* Hidden by default */
+            background-color: #ec6090; /* Button color */ 
+            color: white; /* Text color */
+            border:none; /* No border */
+            border-radius: 50px; /* Rounded corners */
+            padding: 10px 15px; /* Padding */
+            cursor: pointer; /* Pointer cursor on hover */
+            z-index: 1000; /* Ensure it appears above other elements */
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+        }
+
+        #scrollToTopBtn:hover 
+        {
+            background-color: rgb(203, 197, 197); /* Darker shade on hover */
+            color: #990066;
+        }
+        .main-button a 
+        {
+          transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-button a:hover 
+        {
+          background-color: #99CCFF; /* Change to your desired color */
+          color: white;
+        }
+    </style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                      <img src="images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="sign.html">Sign-In/Sign-Up</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="profile.html">Profile <img src="images/Profile-pic.jpg" alt=""></a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <title>Hospitals Near You</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa; /* Light background color */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 20px;
+            margin-top:8%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #ec6090; /* Header color */
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse; /* Remove space between borders */
+        }
+
+        th, td {
+            text-align: center;
+            padding: 15px; /* Increased padding for better spacing */
+            border: 1px solid #dee2e6; /* Light border color */
+        }
+
+        th {
+            background-color: #ec6090; /* Header background color */
+            color: #ec6090; /* Header text color */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray for even rows */
+        }
+
+        tr:hover {
+            background-color: #e2e6ea; /* Light gray on hover */
+        }
+
+        .btn-primary {
+            background-color: #ec6090; /* Button color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Button padding */
+            color: white; /* Button text color */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .btn-primary:hover {
+            background-color: #d55a8a; /* Darker shade on hover */
+        }
+
+        .text-center {
+            margin-top: 20px; /* Space above the button */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="text-center">Hospitals / Blood Banks Near You</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Hospital Name</th>
+                    <th>Rating</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Krishna Hospital</td>
+                    <td>5.0</td>
+                    <td>02692 - 228411</td>
+                    <td>Shree Krishna Hospital & Medical Research Center,Gokal Nagar, Karamsads</td>
+                </tr>
+                <tr>
+                    <td>Iris Hospital</td>
+                    <td>4.2</td>
+                    <td>02692-288288</td>
+                    <td>2Lambhvel Rd, Patel Chokdi, Vivekanand Wadi, Anand, Gujarat.</td>
+                </tr>
+                <tr>
+                    <td>Zydus Hospitals</td>
+                    <td>4.7</td>
+                    <td>+91 89800 85200</td>
+                    <td>Zydus Hospitals and Healthcare Research Pvt. Ltd., Anand-Lambhvel Road, Anand</td>
+                </tr>
+                <tr>
+                    <td>Arun Hospital</td>
+                    <td>4.8</td>
+                    <td>+91 79471 38281</td>
+                    <td>1st Floor, Suramya Complex Above Snehi Dental Clinic Town Hall, Road, Vallabh Vidyanagar, Anand</td>
+                </tr>
+                <tr>
+                    <td>Charusat Healthcare</td>
+                    <td>4.4</td>
+                    <td>+91 9978998835</td>
+                    <td>Chandaben Mohanbhai Patel Blood bank, At. Cahrusat Hospital Changa Village Ta.Petlad,, changa, Anand</td>
+                </tr>
+                <tr>
+                    <td>Avira Hospital</td>
+                    <td>3.6</td>
+                    <td>+91 073593 54201</td>
+                    <td>6R.S.PLATINUM BUILDING, Bhalej Rd, Ganesh Colony, Anand, Gujarat</td>
+                </tr>
+                <tr>
+                    <td>Anand Hospital</td>
+                    <td>4.9</td>
+                    <td>+91 9825752420</td>
+                    <td>Near Over Bridge, Bhalej Road, Beside Bagiwala, Anand, Gujarat</td>
+                </tr>
+                <tr>
+                    <td>IRCS</td>
+                    <td>4.5</td>
+                    <td>+91 7600496650</td>
+                    <td>Indian Red Cross Society, Anand District Branch, Blood Centre. Sardar Bhavan, Opp, Municipal Building, Anand, Gujarat</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p>Copyright © 2025 <a href="#">RedWish</a> Company. All rights reserved. 
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+</body>
+
+</html>
