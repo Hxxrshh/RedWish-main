@@ -1,5 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+        <title>RedWish</title>
+    
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            rel="stylesheet"
+            />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+            />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+            rel="stylesheet"
+            />
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/owl.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <style>
+           /* Scroll to Top Button Styles */
+           #scrollToTopBtn {
+                position: fixed;
+                bottom: 20px; /* Distance from the bottom */
+                left: 20px;
+                display: none; /* Hidden by default */
+                background-color: #ec6090; /* Button color */ 
+                color: white; /* Text color */
+                border:none; /* No border */
+                border-radius: 50px; /* Rounded corners */
+                padding: 10px 15px; /* Padding */
+                cursor: pointer; /* Pointer cursor on hover */
+                z-index: 1000; /* Ensure it appears above other elements */
+                transition: opacity 0.3s ease; /* Smooth transition for opacity */
+            }
+    
+            #scrollToTopBtn:hover 
+            {
+                background-color: rgb(203, 197, 197); /* Darker shade on hover */
+                color: #990066;
+            }
+            .main-button a 
+            {
+              transition: background-color 0.3s, color 0.3s;
+            }
+    
+            .main-button a:hover 
+            {
+              background-color: #99CCFF; /* Change to your desired color */
+              color: white;
+            }
+        </style>
+      </head>
+    
+    <body>
+    
+      <!-- ***** Preloader Start ***** -->
+      
+      <!-- ***** Preloader End ***** -->
+    
+      <!-- ***** Header Area Start ***** -->
+      <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                          <img src="images/logo.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="sign.html">Sign-In/Sign-Up</a></li>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="profile.html">Profile <img src="images/Profile-pic.jpg" alt=""></a></li>
+                        </ul>   
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+      </header>
+      <!-- ***** Header Area End ***** -->
+       
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,8 +113,9 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-                        url('/api/placeholder/1920/1080') center/cover no-repeat fixed;
+            background: linear-gradient(#ec6090(255, 255, 255, 0.9), #ec6090(255, 255, 255, 0.9)),
+                        url('/api/placeholder/1920/1080');
+            
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -126,6 +230,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="donation-form">
             <h2>Donate Blood</h2>
