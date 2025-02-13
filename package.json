@@ -1,0 +1,29 @@
+{
+  "name": "redwish-main",
+  "version": "1.0.0",
+  "description": "![](https://github.com/steadyfall/RedWish/blob/3ef2db47aecc3d9dd9b4e8bf0c4e2f86f00a7966/non-website-related/logo.png)\r # RedWish\r An [online platform]((https://paramshah07.github.io/RedWish/)) which connects people to the easiness of blood donation-transfusion.\r </br>\r </br>\r !['RedWish Main Page'](https://github.com/steadyfall/RedWish/blob/3ef2db47aecc3d9dd9b4e8bf0c4e2f86f00a7966/non-website-related/redwish-main-page.png 'RedWish Main Page')\r </br>\r </br>\r </br>\r </br>\r ## Inspiration\r Blood transfusion saves lives and improves health, but many patients requiring transfusion do not have timely access to safe blood. As a result, nearly 12,000 individuals die every day due to a lack of availability of blood. The lack of knowledge and awareness about blood transfusion in many parts of the globe is a significant contributor to this problem. In January 2022, the American Red Cross declared its first-ever national blood crisis due to a severe blood shortage resulting from complications of the COVID-19 pandemic, which further emphasizes the urgent need to address this issue.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hxxrshh/RedWish-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hxxrshh/RedWish-main/issues"
+  },
+  "homepage": "https://github.com/Hxxrshh/RedWish-main#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  }
+}
