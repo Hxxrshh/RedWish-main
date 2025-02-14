@@ -1555,3 +1555,24 @@ body {
     width: 16%;
   }
 }
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 80px; /* Oval shape width */
+  height: 40px; /* Oval shape height */
+  background-color: #ec6090;
+  color: white;
+  border: none;
+  border-radius: 40px; /* Makes it oval */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+#scrollToTopBtn:hover {
+  color: #ec6090;
+  background-color: #000000; /* Changes color on hover */
+}

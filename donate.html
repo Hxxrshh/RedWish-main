@@ -133,7 +133,22 @@
        };
      </script>
      <!-- ***** Preloader End ***** -->
-  
+     <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+     <script>
+        // Show or hide the button based on scroll position
+        window.onscroll = function () {
+          let btn = document.getElementById("scrollToTopBtn");
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+          } else {
+            btn.style.display = "none";
+          }
+        };
+          // Smooth scroll to top function
+          function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+       </script>
       <!-- ***** Header Area Start ***** -->
       <header class="header-area header-sticky">
         <div class="container">
