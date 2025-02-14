@@ -101,6 +101,27 @@
           .item:hover img {
               transform: scale(1.05);
           }
+          #scrollToTopBtn {
+          position: fixed;
+          bottom: 20px;
+          left: 20px;
+          width: 80px; /* Oval shape width */
+          height: 40px; /* Oval shape height */
+          background-color: #ec6090;
+          color: white;
+          border: none;
+          border-radius: 40px; /* Makes it oval */
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          display: none;
+          transition: background-color 0.3s; /* Smooth color transition */
+        }
+
+        #scrollToTopBtn:hover {
+          color: #ec6090;
+          background-color: #000000; /* Changes color on hover */
+        }
       </style>
     </head>
   
@@ -121,7 +142,24 @@
         };
       </script>
       <!-- ***** Preloader End ***** -->
+      <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
   
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+  
+        // Scroll to the top of the document when the button is clicked
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+
       <!-- ***** Header Area Start ***** -->
       <header class="header-area header-sticky">
         <div class="container">
