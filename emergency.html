@@ -262,37 +262,38 @@ button:hover {
     
     <section id="request-form">
         <h2>Submit an Emergency Request</h2>
-        <form id="emergencyRequestForm">
-            <label for="requesterType">I am a:</label>
-            <select id="requesterType" name="requesterType" required>
-                <option value="hospital">Hospital</option>
-                <option value="blood-bank">Blood Bank</option>
-                <option value="individual">Individual</option>
-            </select>
-            
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="bloodType">Required Blood Type:</label>
-            <select id="bloodType" name="bloodType" required>
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-            </select>
-            
-            <label for="contact">Contact Number:</label>
-            <input type="tel" id="contact" name="contact" required>
-            
-            <label for="location">Location:</label>
-            <input type="text" id="location" name="location" required>
-            
-            <button type="submit">Submit Request</button>
-        </form>
+        <<form id="emergencyRequestForm" action="emergency_request.php" method="POST">
+
+                <label for="requesterType">I am a:</label>  
+                <select id="requesterType" name="requesterType" required>
+                    <option value="hospital">Hospital</option>
+                    <option value="blood-bank">Blood Bank</option>
+                    <option value="individual">Individual</option>
+                </select>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="bloodType">Required Blood Type:</label>
+                <select id="bloodType" name="bloodType" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <button type="submit">Submit Request</button>
+            </form>
     </section>
     
     <section id="requests">
