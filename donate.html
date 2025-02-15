@@ -264,6 +264,43 @@
                         <option value="yes">Yes</option>
                     </select>
                 </div>
+                <div class="mb-3">
+                    <label for="bloodType" class="form-label">Blood Type:</label>
+                    <select class="form-control" id="bloodType" required>
+                        <option value="">Select Blood Type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                    <div class="mb-3">
+                        <label for="recentDonation" class="form-label">Have you donated blood in the last 3 months? (Yes/No)</label>
+                        <select class="form-control" id="recentDonation" required>
+                            <option value="">Select</option>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="medication" class="form-label">Are you currently on any medications? (Yes/No)</label>
+                        <select class="form-control" id="medication" required>
+                            <option value="">Select</option>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tattoo" class="form-label">Have you gotten a tattoo or piercing in the last 6 months? (Yes/No)</label>
+                        <select class="form-control" id="tattoo" required>
+                            <option value="">Select</option>
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
                 <button type="submit" class="btn btn-primary">Check Eligibility</button>
             </form>
         </div>
