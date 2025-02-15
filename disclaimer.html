@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Disclaimer</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Full-screen popup */
+        #disclaimerPopup {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Popup Content */
+        .popup-content {
+            background: rgba(255, 255, 255, 0.9); /* Glassmorphism effect */
+            border: 2px solid #ec6090;
+            padding: 30px;
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ec6090;
+        }
+
+        p {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Buttons */
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+            border-radius: 8px;
+        }
+
+        .accept-btn {
+            background-color: #28a745;
+            color: white;
+            border: 2px solid #ec6090;
+        }
+
+        .accept-btn:hover {
+            background-color: white;
+            color: #ec6090;
+            border: 2px solid #ec6090;
+        }
+
+        .decline-btn {
+            background-color: #dc3545;
+            color: white;
+            border: 2px solid #ec6090;
+        }
+
+        .decline-btn:hover {
+            background-color: white;
+            color: #ec6090;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 500px) {
+            .popup-content {
+                padding: 20px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 13px;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Disclaimer Popup -->
+<div id="disclaimerPopup"  >
+    <div class="popup-content">
+        <h2>Medical Disclaimer </h2>
+        <p>
+            This website provides general information related to blood donation, transfusion, and related medical procedures.  
+            It is not a substitute for professional medical advice, diagnosis, or treatment.  
+            <br></br>
+            ⚠️ Risks & Precautions:  
+            Blood donation and transfusion involve potential risks, including but not limited to allergic reactions, infections, and other complications.  
+            Users should consult a qualified healthcare provider before making any medical decisions.  
+            <br></br>
+            🔹 Data Privacy Notice:  
+            We do not collect, store, or process any personal health-related data through this disclaimer or website without explicit consent.  
+            Any information provided voluntarily (such as for blood donation services) will be handled in accordance with applicable data protection laws, including the DPDP Act.  
+        </p>
+        <br></br>
+        <p>
+                By clicking **"I Accept"**, you acknowledge that:  
+            ✔ You understand the risks involved.  
+            ✔ You agree that this website is for informational purposes only.  
+            ✔ You accept that the website is not liable for any medical complications.  
+            
+        </p>
+        <br></br>
+        <button class="accept-btn" onclick="acceptDisclaimer()">I Accept</button>
+        <button class="decline-btn" onclick="declineDisclaimer()">I Decline</button>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("disclaimerAccepted")) {
+        document.getElementById("disclaimerPopup").style.display = "flex";
+    }
+});
+
+function acceptDisclaimer() {
+    localStorage.setItem("disclaimerAccepted", "true");
+    window.location.href = "index.html"; // Redirect to index.html after accepting
+}
+
+function declineDisclaimer() {
+    alert("You must accept the disclaimer to proceed.");
+    window.location.href = "disclaimer.html"; // Redirect user if they decline
+}
+</script>
+
+</body>
+</html>
